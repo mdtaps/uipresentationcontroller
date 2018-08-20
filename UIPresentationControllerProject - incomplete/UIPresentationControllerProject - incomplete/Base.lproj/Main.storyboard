@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftsd" translatesAutoresizingMaskIntoConstraints="NO" id="Sep-uB-gm3">
+                                <rect key="frame" x="37.5" y="268.5" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3Ed-wl-qbH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vDl-hj-Zey">
+                                <rect key="frame" x="0.0" y="132.5" width="375" height="72"/>
+                                <string key="text">LearnSwiftSD
+Custom View Presention</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lDf-1O-J8s" customClass="InspectableButton" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target">
+                                <rect key="frame" x="122" y="490.5" width="130" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="3FO-wu-llw"/>
+                                    <constraint firstAttribute="height" constant="44" id="xtM-fS-QNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Launch Menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDf-1O-J8s" firstAttribute="top" secondItem="Sep-uB-gm3" secondAttribute="bottom" constant="72" id="7Jv-Gk-I2f"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ghw-uv-KBQ"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="K3u-1W-MgX"/>
+                            <constraint firstItem="vDl-hj-Zey" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SR0-bU-hiG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lDf-1O-J8s" secondAttribute="bottom" constant="132.5" id="TPN-cV-Wh1"/>
+                            <constraint firstItem="vDl-hj-Zey" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kB2-pb-PMO"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="top" secondItem="vDl-hj-Zey" secondAttribute="bottom" constant="64" id="pc0-E3-ErL"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="tFu-XV-ape"/>
+                            <constraint firstItem="lDf-1O-J8s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vhZ-Ek-pMS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swiftsd" width="600" height="338"/>
+    </resources>
+</document>
