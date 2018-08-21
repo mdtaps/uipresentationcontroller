@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4CE0635212BC431003296AB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0634212BC431003296AB /* MenuViewController.swift */; };
+		F4CE0637212BE062003296AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0636212BE062003296AB /* Constants.swift */; };
+		F4CE0639212BF072003296AB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0638212BF072003296AB /* UIViewController+Extension.swift */; };
 		F4DED0D5212A5BBC0033CB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DED0D4212A5BBC0033CB5A /* AppDelegate.swift */; };
-		F4DED0D7212A5BBC0033CB5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DED0D6212A5BBC0033CB5A /* ViewController.swift */; };
+		F4DED0D7212A5BBC0033CB5A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DED0D6212A5BBC0033CB5A /* HomeViewController.swift */; };
 		F4DED0DA212A5BBC0033CB5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DED0D8212A5BBC0033CB5A /* Main.storyboard */; };
 		F4DED0DC212A5BBF0033CB5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DED0DB212A5BBF0033CB5A /* Assets.xcassets */; };
 		F4DED0DF212A5BBF0033CB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DED0DD212A5BBF0033CB5A /* LaunchScreen.storyboard */; };
@@ -35,9 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4CE0634212BC431003296AB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F4CE0636212BE062003296AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4CE0638212BF072003296AB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F4DED0D1212A5BBC0033CB5A /* UIPresentationControllerProject - incomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIPresentationControllerProject - incomplete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DED0D4212A5BBC0033CB5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4DED0D6212A5BBC0033CB5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4DED0D6212A5BBC0033CB5A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4DED0D9212A5BBC0033CB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4DED0DB212A5BBF0033CB5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DED0DE212A5BBF0033CB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,11 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				F4DED0D4212A5BBC0033CB5A /* AppDelegate.swift */,
-				F4DED0D6212A5BBC0033CB5A /* ViewController.swift */,
+				F4DED0D6212A5BBC0033CB5A /* HomeViewController.swift */,
+				F4CE0634212BC431003296AB /* MenuViewController.swift */,
 				F4DED0D8212A5BBC0033CB5A /* Main.storyboard */,
 				F4DED0DB212A5BBF0033CB5A /* Assets.xcassets */,
-				F4DED102212A69A30033CB5A /* InspectableButton.swift */,
+				F4CE0636212BE062003296AB /* Constants.swift */,
 				F4DED0DD212A5BBF0033CB5A /* LaunchScreen.storyboard */,
+				F4DED102212A69A30033CB5A /* InspectableButton.swift */,
+				F4CE0638212BF072003296AB /* UIViewController+Extension.swift */,
 				F4DED0E0212A5BBF0033CB5A /* Info.plist */,
 			);
 			path = "UIPresentationControllerProject - incomplete";
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DED0D7212A5BBC0033CB5A /* ViewController.swift in Sources */,
+				F4CE0639212BF072003296AB /* UIViewController+Extension.swift in Sources */,
+				F4CE0637212BE062003296AB /* Constants.swift in Sources */,
+				F4DED0D7212A5BBC0033CB5A /* HomeViewController.swift in Sources */,
 				F4DED0D5212A5BBC0033CB5A /* AppDelegate.swift in Sources */,
 				F4DED103212A69A30033CB5A /* InspectableButton.swift in Sources */,
+				F4CE0635212BC431003296AB /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

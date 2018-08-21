@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,8 +27,8 @@ Custom View Presention</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftsd" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-eH-rXK">
-                                <rect key="frame" x="-0.5" y="268.5" width="375" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftsd" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-eH-rXK">
+                                <rect key="frame" x="37" y="268.5" width="300" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="PRs-KI-Nnj"/>
                                 </constraints>
@@ -35,7 +36,7 @@ Custom View Presention</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nHL-eH-rXK" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="2LS-FX-HEe"/>
+                            <constraint firstItem="nHL-eH-rXK" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.8" id="2LS-FX-HEe"/>
                             <constraint firstItem="nHL-eH-rXK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="At1-QH-Vhy"/>
                             <constraint firstItem="nHL-eH-rXK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ROI-Df-yzj"/>
                             <constraint firstItem="1HM-Fa-KvH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ecg-Tv-gUY"/>

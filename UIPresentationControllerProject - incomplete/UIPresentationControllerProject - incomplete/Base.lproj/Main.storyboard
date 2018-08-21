@@ -33,17 +33,143 @@ Custom View Presention</string>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lDf-1O-J8s" customClass="InspectableButton" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target">
-                                <rect key="frame" x="122" y="490.5" width="130" height="44"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9bH-d7-bBb">
+                                <rect key="frame" x="56.5" y="479" width="262.5" height="148"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lDf-1O-J8s" customClass="InspectableButton" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="262.5" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="xtM-fS-QNc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Modal Presentation"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="modalLaunch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baP-1l-hh3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="f0R-AQ-Sr6" customClass="InspectableButton" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52" width="262.5" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="umW-wX-Dt2"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="zNJ-nM-DL6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Popover Presentation"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="popoverLaunch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MUm-l9-GMM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jGW-JV-fWr" customClass="InspectableButton" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104" width="262.5" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="eOm-j9-jW7"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="vZA-Kg-uTr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Custom Presentation"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customLaunch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nza-Ms-IVw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ghw-uv-KBQ"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="K3u-1W-MgX"/>
+                            <constraint firstItem="vDl-hj-Zey" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SR0-bU-hiG"/>
+                            <constraint firstItem="9bH-d7-bBb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="SWj-hX-xu8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9bH-d7-bBb" secondAttribute="bottom" constant="40" id="aMN-AI-40m"/>
+                            <constraint firstItem="vDl-hj-Zey" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kB2-pb-PMO"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="top" secondItem="vDl-hj-Zey" secondAttribute="bottom" constant="64" id="pc0-E3-ErL"/>
+                            <constraint firstItem="Sep-uB-gm3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="tFu-XV-ape"/>
+                            <constraint firstItem="9bH-d7-bBb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ucK-Tj-SmJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="popoverButton" destination="f0R-AQ-Sr6" id="ikx-k8-SyE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="32"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="i4V-Ud-tby">
+            <objects>
+                <viewController storyboardIdentifier="menuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2Lo-df-Nhi" customClass="MenuViewController" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nDI-Cb-1AK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jLy-va-EUU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="533.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" textLabel="0nv-Yk-MpE" style="IBUITableViewCellStyleDefault" id="kew-Iv-aYJ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kew-Iv-aYJ" id="tfO-FL-ni5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0nv-Yk-MpE">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THc-5S-lOj" customClass="InspectableButton" customModule="UIPresentationControllerProject___incomplete" customModuleProvider="target">
+                                <rect key="frame" x="137" y="607" width="100" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="3FO-wu-llw"/>
-                                    <constraint firstAttribute="height" constant="44" id="xtM-fS-QNc"/>
+                                    <constraint firstAttribute="height" constant="40" id="Sxy-G0-oeB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="xcQ-SP-kGh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Launch Menu"/>
+                                <state key="normal" title="Dismiss"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="9"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,25 +178,26 @@ Custom View Presention</string>
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissTapped:" destination="2Lo-df-Nhi" eventType="touchUpInside" id="yaY-FJ-Zz5"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lDf-1O-J8s" firstAttribute="top" secondItem="Sep-uB-gm3" secondAttribute="bottom" constant="72" id="7Jv-Gk-I2f"/>
-                            <constraint firstItem="Sep-uB-gm3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ghw-uv-KBQ"/>
-                            <constraint firstItem="Sep-uB-gm3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="K3u-1W-MgX"/>
-                            <constraint firstItem="vDl-hj-Zey" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SR0-bU-hiG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lDf-1O-J8s" secondAttribute="bottom" constant="132.5" id="TPN-cV-Wh1"/>
-                            <constraint firstItem="vDl-hj-Zey" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kB2-pb-PMO"/>
-                            <constraint firstItem="Sep-uB-gm3" firstAttribute="top" secondItem="vDl-hj-Zey" secondAttribute="bottom" constant="64" id="pc0-E3-ErL"/>
-                            <constraint firstItem="Sep-uB-gm3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="tFu-XV-ape"/>
-                            <constraint firstItem="lDf-1O-J8s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vhZ-Ek-pMS"/>
+                            <constraint firstItem="jLy-va-EUU" firstAttribute="width" secondItem="nDI-Cb-1AK" secondAttribute="width" id="HwX-2F-AsP"/>
+                            <constraint firstItem="THc-5S-lOj" firstAttribute="centerX" secondItem="coY-bt-a6a" secondAttribute="centerX" id="J9r-B4-SVz"/>
+                            <constraint firstItem="coY-bt-a6a" firstAttribute="bottom" secondItem="THc-5S-lOj" secondAttribute="bottom" constant="20" id="LjE-6x-6of"/>
+                            <constraint firstItem="jLy-va-EUU" firstAttribute="top" secondItem="coY-bt-a6a" secondAttribute="top" id="N52-m3-Yy5"/>
+                            <constraint firstItem="coY-bt-a6a" firstAttribute="trailing" secondItem="jLy-va-EUU" secondAttribute="trailing" id="XFU-zh-Kpp"/>
+                            <constraint firstItem="jLy-va-EUU" firstAttribute="height" secondItem="nDI-Cb-1AK" secondAttribute="height" multiplier="0.8" id="f4M-fo-T9m"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="coY-bt-a6a"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoZ-o4-t37" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="900" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>
