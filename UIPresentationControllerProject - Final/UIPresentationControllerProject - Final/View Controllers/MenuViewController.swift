@@ -10,6 +10,11 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
+    deinit {
+        transitioningDelegate = nil
+        modalPresentationStyle = .none
+    }
+    
     @IBAction func dismissTapped(_ sender: InspectableButton) {
         dismiss(animated: true, completion: nil)
     }

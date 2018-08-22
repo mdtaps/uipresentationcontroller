@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41CFF8B212D56F9001F63EE /* MenuDismissalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CFF8A212D56F9001F63EE /* MenuDismissalAnimator.swift */; };
+		F4B79AB6212D144D00C80EF4 /* MenuTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B79AB5212D144D00C80EF4 /* MenuTransitioningDelegate.swift */; };
+		F4B79AB9212D151500C80EF4 /* MenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B79AB8212D151400C80EF4 /* MenuPresentationController.swift */; };
+		F4B79ABB212D1A0D00C80EF4 /* MenuPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B79ABA212D1A0D00C80EF4 /* MenuPresentationAnimator.swift */; };
 		F4CE0635212BC431003296AB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0634212BC431003296AB /* MenuViewController.swift */; };
 		F4CE0637212BE062003296AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0636212BE062003296AB /* Constants.swift */; };
 		F4CE0639212BF072003296AB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0638212BF072003296AB /* UIViewController+Extension.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41CFF8A212D56F9001F63EE /* MenuDismissalAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDismissalAnimator.swift; sourceTree = "<group>"; };
+		F4B79AB5212D144D00C80EF4 /* MenuTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransitioningDelegate.swift; sourceTree = "<group>"; };
+		F4B79AB8212D151400C80EF4 /* MenuPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresentationController.swift; sourceTree = "<group>"; };
+		F4B79ABA212D1A0D00C80EF4 /* MenuPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresentationAnimator.swift; sourceTree = "<group>"; };
 		F4CE0634212BC431003296AB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F4CE0636212BE062003296AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F4CE0638212BF072003296AB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -84,6 +92,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41CFF8C212D6B50001F63EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4DED102212A69A30033CB5A /* InspectableButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F41CFF8D212D6B65001F63EE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4DED0DD212A5BBF0033CB5A /* LaunchScreen.storyboard */,
+				F4DED0D8212A5BBC0033CB5A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F41CFF8E212D6B7E001F63EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B79AB7212D146400C80EF4 /* Presentation Controllers */,
+				F4DED0D6212A5BBC0033CB5A /* HomeViewController.swift */,
+				F4CE0634212BC431003296AB /* MenuViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F41CFF8F212D6B93001F63EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4CE0636212BE062003296AB /* Constants.swift */,
+				F4CE0638212BF072003296AB /* UIViewController+Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4B79AB7212D146400C80EF4 /* Presentation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B79AB5212D144D00C80EF4 /* MenuTransitioningDelegate.swift */,
+				F4B79AB8212D151400C80EF4 /* MenuPresentationController.swift */,
+				F4B79ABA212D1A0D00C80EF4 /* MenuPresentationAnimator.swift */,
+				F41CFF8A212D56F9001F63EE /* MenuDismissalAnimator.swift */,
+			);
+			path = "Presentation Controllers";
+			sourceTree = "<group>";
+		};
 		F4DED0C8212A5BBC0033CB5A = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +164,12 @@
 			isa = PBXGroup;
 			children = (
 				F4DED0D4212A5BBC0033CB5A /* AppDelegate.swift */,
-				F4DED0D6212A5BBC0033CB5A /* HomeViewController.swift */,
-				F4CE0634212BC431003296AB /* MenuViewController.swift */,
-				F4DED0D8212A5BBC0033CB5A /* Main.storyboard */,
-				F4DED0DB212A5BBF0033CB5A /* Assets.xcassets */,
-				F4CE0636212BE062003296AB /* Constants.swift */,
-				F4DED0DD212A5BBF0033CB5A /* LaunchScreen.storyboard */,
-				F4DED102212A69A30033CB5A /* InspectableButton.swift */,
-				F4CE0638212BF072003296AB /* UIViewController+Extension.swift */,
+				F41CFF8E212D6B7E001F63EE /* View Controllers */,
+				F41CFF8F212D6B93001F63EE /* Model */,
+				F41CFF8C212D6B50001F63EE /* View */,
+				F41CFF8D212D6B65001F63EE /* Storyboard */,
 				F4DED0E0212A5BBF0033CB5A /* Info.plist */,
+				F4DED0DB212A5BBF0033CB5A /* Assets.xcassets */,
 			);
 			path = "UIPresentationControllerProject - Final";
 			sourceTree = "<group>";
@@ -272,12 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B79AB9212D151500C80EF4 /* MenuPresentationController.swift in Sources */,
 				F4CE0639212BF072003296AB /* UIViewController+Extension.swift in Sources */,
 				F4CE0637212BE062003296AB /* Constants.swift in Sources */,
 				F4DED0D7212A5BBC0033CB5A /* HomeViewController.swift in Sources */,
 				F4DED0D5212A5BBC0033CB5A /* AppDelegate.swift in Sources */,
+				F4B79AB6212D144D00C80EF4 /* MenuTransitioningDelegate.swift in Sources */,
 				F4DED103212A69A30033CB5A /* InspectableButton.swift in Sources */,
+				F4B79ABB212D1A0D00C80EF4 /* MenuPresentationAnimator.swift in Sources */,
 				F4CE0635212BC431003296AB /* MenuViewController.swift in Sources */,
+				F41CFF8B212D56F9001F63EE /* MenuDismissalAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

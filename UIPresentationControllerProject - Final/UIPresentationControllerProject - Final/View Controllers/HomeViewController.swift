@@ -10,8 +10,8 @@ import UIKit
 
 @IBDesignable
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var popoverButton: InspectableButton!
+    
+    let menuTransitioningDelegate = MenuTransitioningDelegate()
     
     @IBAction func modalLaunch(_ sender: UIButton) {
         let menuVC = makeMenu()
@@ -25,7 +25,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func customLaunch(_ sender: UIButton) {
-        //Launch Custom Presentation
+        let menuVC = makeMenu()
+        menuVC.transitioningDelegate = menuTransitioningDelegate
+        menuVC.modalPresentationStyle = .custom
+        print(menuVC.view.frame)
+        present(menuVC, animated: true, completion: nil)
     }
     
 }
